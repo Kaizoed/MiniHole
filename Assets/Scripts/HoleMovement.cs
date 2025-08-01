@@ -10,6 +10,6 @@ public class HoleMovement : MonoBehaviour
         float v = Input.GetAxis("Vertical");
 
         Vector3 move = new Vector3(h, 0f, v) * moveSpeed * Time.deltaTime;
-        transform.Translate(move, Space.World);
+        transform.Translate(move, Space.World); // will work with Kinematic Rigidbody
     }
 }
